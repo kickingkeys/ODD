@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /***
  * Global styles
  ***/
@@ -67,6 +72,7 @@ h2 {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.3;
+  margin-bottom: 24px;
 }
 
 a {
@@ -89,6 +95,40 @@ footer {
   opacity: 0.5;
 }
 
+.carousel {
+  overflow: hidden;
+  position: relative;
+  height: 380px;
+}
+.carousel-list {
+  display: flex;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+}
+.carousel-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 52px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-inline: 12px;
+}
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.carousel-card--mobile {
+  padding-inline: 16px;
+  padding-bottom: 52px;
+}
+.carousel-card--desktop {
+  padding-inline: 18px;
+}
+
 /***
  * Utility classes
  ***/
@@ -104,4 +144,8 @@ footer {
 }
 .two-column > * {
   width: 138px;
+}
+
+.full-bleed {
+  width: 100vw;
 }
