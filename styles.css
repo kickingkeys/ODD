@@ -52,6 +52,7 @@ body {
   padding: 60px 20px;
 
   text-transform: uppercase;
+  overflow-x: hidden;
 }
 
 main {
@@ -106,6 +107,9 @@ footer {
 
   position: absolute;
   left: 0;
+}
+.carousel-list + .carousel-list {
+  margin-left: 12px;
 }
 .carousel-card {
   background: rgba(255, 255, 255, 0.1);
