@@ -81,8 +81,8 @@ a {
   color: #FFFFFF;
 }
 a:hover {
-  color: #FAC515;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 li {
@@ -144,8 +144,16 @@ footer {
  * Utility classes
  ***/
 
-.accent {
+.accent-yellow {
   color: #FAC515;
+}
+
+.accent-pink {
+  color: #F670C7;
+}
+
+.accent-blue {
+  color: #36BFFA;
 }
 
 .two-column {
